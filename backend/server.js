@@ -7,7 +7,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Comedy Generator Endpoint using Fun Translations API
 app.post('/api/generate-comedy', async (req, res) => {
   const { prompt } = req.body;
   try {
@@ -21,7 +20,6 @@ app.post('/api/generate-comedy', async (req, res) => {
   }
 });
 
-// Music Generator Endpoint using Fun Translations API
 app.post('/api/generate-music', async (req, res) => {
   const { theme } = req.body;
   try {
